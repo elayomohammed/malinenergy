@@ -1,0 +1,448 @@
+:root {
+    --priBgColor: #00204a;
+    --secBgColor: #962d0f;
+    --priTextColor: #fffffc;
+    --secTextColor: black;
+    --tettextColor: #962d0f;
+}
+
+/* styles for the website body*/
+body{
+    width: 97%;
+    padding: 0%;
+    background-color: #00204a;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+#malinenergy-main {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
+
+#header {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 0%;
+}
+
+/*navigation menu*/
+#fixedLogoNavMenu {
+    width: 100%;
+    background-color: #f4f4ef;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1% 1% 0% 1%;
+    border-radius: 5px;
+}
+
+/*site logo*/
+.logo-container {
+    width: 20%;
+    height: 50px;
+}
+.logo {
+    width: 100%;
+    height: 100%;
+}
+
+/* navigation list container */
+#nav-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: -370px;
+    top: -12px;
+    list-style-type: none;
+    border-radius: 5px;
+    height: 100%;
+}
+.nav-list-item {
+    margin: 0% 11% 0% 0%;
+    height: 50%;
+}
+.nav-list-item a {
+    color: #2a5c82;
+}
+.nav-list-item a:hover {
+    color: #ffffff;
+}
+.nav-list-item:hover {
+    background-color: #2a5c82;
+    border-radius: 5px;
+}
+
+/* home nav drop-down list */
+#home-nav-dropdown-list {
+    display: none;
+}
+
+/* menu open and close button container */
+#menuBtnOpenClose-Container {
+    display: none;
+}
+
+/* search box container */
+#search-box-container {
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    width: auto;
+}
+#search-box {
+    width: 130px;
+    text-align: center;
+    border: solid black 0.5px;
+    border-radius: 5px;
+}
+
+/* home nav dropdown list */
+.dropdown-icon {
+    height: 20px;
+    width: 15px;
+}
+#homeNlist-icon-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* styles for websites main section */
+#main-section {
+    width: 100%;
+    background-color: #00204a;
+}
+/* welcome message section */
+#welcomeMsg-top-container {
+    background-color: #00204a;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    top: -16px;
+}
+#welcomeMsg-container {
+    width: 90%;
+    margin: auto;
+    background-color: #f4f4ef;
+    border-radius: 5px;
+}
+#welcomeMsg {
+    padding: 2%;
+    color: #6cd4e4;
+    background-image: url('../dependancies/telecom-city.jpg');
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#welcomeMsg-title {
+    border-radius: 5px;
+}
+.primary-header{
+    text-align: center;
+    padding: 2% 0% 0% 0%;
+    color: #2a5c82;
+}
+
+/* about, vision and mission section */
+#aboutVisionMission-top-container {
+    width: 90%;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 0% 0% 1% 0%;
+    border-radius: 5px;
+    position: relative;
+    top: -16px;
+}
+#about-container {
+    width: 100%;
+    margin: auto;
+    background-color: #ffffff;
+    border-top: solid #f5f5f0 0.5px;
+    border-radius: 5px;
+    padding-top: 0px;
+}
+#about-note {
+    padding: 0% 2% 2% 2%;
+    margin-top: 0%;
+}
+#about-title {
+    margin-top: 0%;
+    padding-bottom: 2%;
+    background-color: #f4f4ef;
+    border-radius: 5px;
+}
+#visionMission-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: #f4f4ef;
+    border-radius: 5px;
+}
+#vision-note, #mission-note {
+    padding: 0% 5% 0% 4%;
+}
+
+/* services section */
+#top-service-container {
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    top: -16px;
+}
+#service-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+.service-item {
+    padding: 2%;
+    background-color: #f4f4ef;
+    border: solid #f4f4ef 0.5px;
+    border-radius: 5px;
+}
+#service-title, #experience-title {
+    background-color: #f4f4ef;
+    padding-bottom: 2%;
+    border-radius: 5px;
+    margin-bottom: 1%;
+}
+
+/* experience and team section */
+.top-experience-and-team-container {
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    top: -16px;
+}
+
+.experience-and-team-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+/* team section */
+.image-and-bio {
+    display: flex;
+    flex-direction: column;
+}
+.team-member-img {
+    width: 198px;
+    height: 248px;
+    align-self: center;
+    border-radius: 5px;
+}
+
+/* contact section */
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: #2a5c82;
+}
+#contact-title, #team-title {
+    background-color: #f4f4ef;
+    padding-bottom: 2%;
+    border-radius: 5px;
+    margin-bottom: 1%;
+}
+#contact-form {
+    background-color: #2a5c82;
+    width: 96%;
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
+    color: #191818;
+    padding-bottom: 10px;
+    box-shadow: 3px 3px #00204a;
+}
+.input-field {
+    width: 60%;
+}
+#top-contact-container {
+    padding-bottom: 5px;
+}
+#contact-fieldset {
+    width: 70%;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 2.5px 2.5px #00204a;
+}
+#send-us-email {
+    background-color: #00204a;
+    cursor: pointer;
+    color: #e9ecf1;
+}
+#send-us-email:hover {
+    scale: 1.2;
+}
+
+/* footer section begings here */
+#footer-section {
+    width: 100%;
+    background-color: #f4f4ef;
+    border-radius: 5px;
+    text-align: left;
+}
+#foot-nav-container {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    color: #2a5c82;
+}
+#foot-nav-container a:visited {
+    color: #2a5c82;
+}
+#foot-nav-container a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+#logo-nav-foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+#foot-logo {
+    margin-top: 15px;
+}
+
+/* copyright section */
+#copyright-terms {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    font-size: small;
+}
+#company-terms {
+    position: relative;
+    top: 15px;
+    cursor: pointer;
+}
+#terms-title {
+    color: #2a5c82;
+}
+#terms-condition-cookie-policy-note {
+    padding-bottom: 2%;
+}
+
+/* responsiveness mobile clients */
+@media screen and (max-width: 615px) {
+    /* website body*/
+    body{
+        width: 96%;
+        max-width: none;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    /* main sites body */
+    #malinenergy-main {
+        width: 100%;
+    }
+
+    /*website's header */
+    #header {
+        width: 100%;
+    }
+    .logo-container {
+        width: 35%;
+        height: 45px;
+    }
+
+    /*navigation menu*/
+    #fixedLogoNavMenu {
+        flex-direction: column;
+        height: 60px;
+    }
+
+    /* navigation list container */
+    #nav-container {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 55.5px;
+        left: 53.5%;
+        height: 285px;
+        width: 45%;
+        padding-left: 5px;
+        background-color: #f4f4ef;
+        z-index: 100;
+        border-radius: 5px;
+    }
+
+    .nav-list-item {
+        margin-left: -21.5%;
+        padding-left: 10px;
+        background-color: #f4f4ef;
+        margin-right: 0px;
+    }
+
+    /* search box container */
+    #search-box-container {
+        top: 2.5%;
+        left: 43%;
+    }
+    #search-box {
+        width: 140px;
+    }
+
+    /* menu open and close button container */
+    #menuBtnOpenClose-Container {
+        display: inline;
+        position: absolute;
+        top: 20px;
+        left: 91%;
+        cursor: pointer;
+    }
+    #close-menu:hover {
+        scale: -1.3;
+    }
+    #open-menu:hover {
+        scale: -1.3;
+    }
+
+
+    /* site menu open and close buttons */
+    #close-menu {
+        display: none;
+    }
+
+    /* websites main section */
+    #main-section {
+        width: 100%;
+    }
+
+    /* about, vision and mission */
+    #visionMission-container {
+        flex-direction: column;
+    }
+
+    /* services sections */
+    #service-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* experience section */
+    .experience-and-team-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* footer section begings here */
+    #footer-section {
+        top: -16px;
+        width: 100%;
+    }
+    
+}
