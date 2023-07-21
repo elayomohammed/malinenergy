@@ -95,8 +95,8 @@ a {
 /* search box container */
 #search-box-container {
     position: absolute;
-    top: 10.5px;
-    right: 7%;
+    top: 15px;
+    right: 9%;
     width: auto;
 }
 #search-box {
