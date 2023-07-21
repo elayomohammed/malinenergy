@@ -60,8 +60,8 @@ a {
     display: flex;
     flex-direction: row;
     position: relative;
-    left: -400px;
-    top: -12px;
+    left: -45%;
+    top: -8px;
     list-style-type: none;
     border-radius: 5px;
     height: 100%;
