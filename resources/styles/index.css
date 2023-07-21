@@ -8,13 +8,13 @@
 
 /* styles for the website body*/
 body{
-    width: 97%;
+    width: 98%;
     padding: 0%;
     background-color: #00204a;
     font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 25px;
-    font-size: 16px;
-    text-align: justify;
+    font-size: 15px;
+    text-align: left;
 }
 
 #malinenergy-main {
@@ -25,9 +25,12 @@ a {
 }
 
 #header {
+    position: fixed;
+    top: 0px;
     width: 100%;
     height: fit-content;
     padding-bottom: 0%;
+    z-index: 99;
 }
 
 /*navigation menu*/
@@ -49,6 +52,7 @@ a {
 .logo {
     width: 100%;
     height: 100%;
+    mix-blend-mode:darken;
 }
 
 /* navigation list container */
@@ -67,10 +71,11 @@ a {
     height: 50%;
 }
 .nav-list-item a {
-    color: #2a5c82;
+    color: #041522;
 }
 .nav-list-item a:hover {
     color: #ffffff;
+    text-decoration: underline;
 }
 .nav-list-item:hover {
     background-color: #2a5c82;
@@ -90,8 +95,8 @@ a {
 /* search box container */
 #search-box-container {
     position: absolute;
-    top: 5%;
-    left: 80%;
+    top: 10px;
+    right: 5%;
     width: auto;
 }
 #search-box {
@@ -118,17 +123,56 @@ a {
 }
 /* welcome message section */
 #welcomeMsg-top-container {
-    background-color: #00204a;
-    width: 100%;
-    border-radius: 5px;
-    position: relative;
-    top: -16px;
-}
-#welcomeMsg-container {
     width: 90%;
     margin: auto;
-    background-color: #f4f4ef;
+    position: relative;
+    margin-top: 2.5%;
+    background-color: #ffffff;
     border-radius: 5px;
+}
+#short-welcome-note {
+    padding: 2%;
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    height: auto;
+    margin-top: 2%;
+    text-align: center;
+}
+#welcomeMsg-container {
+    width: 94%;
+    height: auto;
+    margin: auto;
+    border-radius: 5px;
+    display: none;
+    position: fixed;
+    z-index: 101;
+    top: 5%;
+    left: 3%;
+}
+#msg-close-menu {
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    left: 99%;
+    top: -2.5%;
+    border: solid #131516 0.5px;
+    scale: 1.2;
+    mix-blend-mode: darken;
+}
+
+#close-menu,#msg-close-menu:hover {
+    scale: 1.5;
+}
+#view-welcome-msg {
+    cursor: pointer;
+    border-radius: 5px;
+    border: solid 0.5px;
+    box-shadow: 0px 1.5px #00204a;
+}
+#view-welcome-msg:hover {
+    scale: 1.1;
 }
 #welcomeMsg {
     padding: 2%;
@@ -136,33 +180,36 @@ a {
     background-image: url('../dependancies/telecom-city.jpg');
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    background-blend-mode: color-burn;
+    margin-top: 0px;
 }
-#welcomeMsg-title {
-    border-radius: 5px;
-}
+
 .primary-header{
     text-align: center;
-    padding: 2% 0% 0% 0%;
-    color: #2a5c82;
+    padding: 2% 0% 2% 0%;
+    color: #000000;
+    background-color: #2a5c82;
+    border-radius: 5px;
 }
 
 /* about, vision and mission section */
-#aboutVisionMission-top-container {
+.top-level-container {
     width: 90%;
     margin: auto;
     background-color: #ffffff;
-    padding: 0% 0% 1% 0%;
     border-radius: 5px;
     position: relative;
-    top: -16px;
+}
+#aboutVisionMission-top-container {
+    padding-bottom: 6px;
+    margin-top: 16px;
 }
 #about-container {
-    width: 100%;
+    width: 97%;
     margin: auto;
-    background-color: #ffffff;
-    border-top: solid #f5f5f0 0.5px;
     border-radius: 5px;
-    padding-top: 0px;
+    background-color: #f4f4ef;
+    padding-top: 1%;
 }
 #about-note {
     padding: 0% 2% 2% 2%;
@@ -171,15 +218,13 @@ a {
 #about-title {
     margin-top: 0%;
     padding-bottom: 2%;
-    background-color: #f4f4ef;
     border-radius: 5px;
 }
 #visionMission-container {
     width: 100%;
     margin: auto;
-    display: flex;
-    flex-direction: row;
-    background-color: #f4f4ef;
+    display: grid;
+    grid-template-columns: auto auto;
     border-radius: 5px;
 }
 #vision-note, #mission-note {
@@ -187,40 +232,42 @@ a {
 }
 
 /* services section */
-#top-service-container {
-    width: 90%;
-    margin: 0% 5% 0% 5%;
-    background-color: white;
-    border-radius: 5px;
-    position: relative;
-    top: -16px;
-}
 #service-container {
+    background-color: #f4f4ef;
+    width: 97%;
+    margin: auto;
+    border-radius: 5px;
+}
+#services {
     display: grid;
     grid-template-columns: auto auto;
     gap: 10px;
+    padding: 1%;
 }
-.service-item {
+.service-item, #experience-note {
     padding: 2%;
-    background-color: #f4f4ef;
-    border: solid #f4f4ef 0.5px;
-    border-radius: 5px;
+}
+#experience-note, #team-note, #team-note, .team-item, #contact-note {
+    text-align: center;
 }
 #service-title, #experience-title {
-    background-color: #f4f4ef;
-    padding-bottom: 2%;
-    border-radius: 5px;
-    margin-bottom: 1%;
+    margin: 0px;
 }
 
 /* experience and team section */
+#top-experience-container, #top-team-container, #top-contact-container, #top-service-container {
+    padding: 6px 0px 6px 0px;
+    margin-top: 16px;
+}
+#experience-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
 .top-experience-and-team-container {
-    width: 90%;
-    margin: 0% 5% 0% 5%;
-    background-color: #ffffff;
+    background-color: #f4f4ef;
+    width: 97%;
+    margin: auto;
     border-radius: 5px;
-    position: relative;
-    top: -16px;
 }
 
 .experience-and-team-container {
@@ -238,6 +285,7 @@ a {
     height: 248px;
     align-self: center;
     border-radius: 5px;
+    mix-blend-mode: darken;
 }
 
 /* contact section */
@@ -248,37 +296,40 @@ a {
     color: #2a5c82;
 }
 #contact-title, #team-title {
-    background-color: #f4f4ef;
+    background-color: #2a5c82;
     padding-bottom: 2%;
     border-radius: 5px;
     margin-bottom: 1%;
 }
 #contact-form {
     background-color: #2a5c82;
-    width: 96%;
+    width: 100%;
     margin: auto;
     border-radius: 5px;
-    text-align: center;
     color: #191818;
     padding-bottom: 10px;
-    box-shadow: 3px 3px #00204a;
+    box-shadow: 0px 1.5px #00204a;
 }
 .input-field {
-    width: 60%;
+    width: 95%;
+    margin: 0px;
 }
 #top-contact-container {
     padding-bottom: 5px;
 }
 #contact-fieldset {
-    width: 70%;
+    width: 80%;
     margin: auto;
     border-radius: 5px;
-    box-shadow: 2.5px 2.5px #00204a;
+    box-shadow: 0px 3px #00204a;
 }
 #send-us-email {
     background-color: #00204a;
     cursor: pointer;
     color: #e9ecf1;
+    width: 24%;
+    margin: auto 38% auto 38%;
+    height: 30px;
 }
 #send-us-email:hover {
     scale: 1.2;
@@ -339,9 +390,10 @@ a {
 @media screen and (max-width: 615px) {
     /* website body*/
     body{
-        width: 96%;
+        width: 97%;
+        margin: auto;
         max-width: none;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 22px;
     }
 
@@ -370,12 +422,11 @@ a {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 55.5px;
-        left: 53.5%;
+        top: 50px;
+        left: 46.3%;
         height: 285px;
         width: 45%;
         padding-left: 5px;
-        background-color: #f4f4ef;
         z-index: 100;
         border-radius: 5px;
     }
@@ -389,7 +440,7 @@ a {
 
     /* search box container */
     #search-box-container {
-        top: 2.5%;
+        top: 25%;
         left: 43%;
     }
     #search-box {
@@ -415,6 +466,7 @@ a {
     /* site menu open and close buttons */
     #close-menu {
         display: none;
+        cursor: pointer;
     }
 
     /* websites main section */
@@ -422,18 +474,26 @@ a {
         width: 100%;
     }
 
-    /* about, vision and mission */
-    #visionMission-container {
-        flex-direction: column;
+    /* welcome message section */
+    #short-welcome-note {
+        padding-top: 33px;
+        height: 60px;
+        border-radius: 5px;
+    }
+    #msg-close-menu {
+        left: 98%;
+        top: -1.5%;
     }
 
     /* services sections */
-    #service-container {
+
+    /* experience section */
+    #experience-container {
         display: flex;
         flex-direction: column;
     }
 
-    /* experience section */
+    /* team section */
     .experience-and-team-container {
         display: flex;
         flex-direction: column;
