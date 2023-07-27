@@ -119,7 +119,7 @@ a {
 /* styles for websites main section */
 #main-section {
     width: 100%;
-    background-color: #00204a;
+    background-color: #ffffff;
 }
 /* welcome message section */
 #welcomeMsg-top-container {
@@ -170,6 +170,9 @@ a {
     border-radius: 5px;
     border: solid 0.5px;
     box-shadow: 0px 1.5px #00204a;
+    background-color: #2a5c82;
+    height: 25px;
+    color: #ffffff;
 }
 #view-welcome-msg:hover {
     scale: 1.1;
@@ -188,8 +191,6 @@ a {
     text-align: center;
     padding: 2% 0% 2% 0%;
     color: #000000;
-    background-color: #2a5c82;
-    border-radius: 5px;
 }
 
 /* about, vision and mission section */
@@ -289,39 +290,45 @@ a {
 }
 
 /* contact section */
-.contact-info {
+address {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    justify-content: space-around;
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    color: #2a5c82;
+}
+#location-icon-note {
+    text-align: center;
+    margin-top: -15px;
 }
 #contact-title, #team-title {
-    background-color: #2a5c82;
     padding-bottom: 2%;
-    border-radius: 5px;
     margin-bottom: 1%;
 }
 #contact-form {
-    background-color: #2a5c82;
-    width: 100%;
     margin: auto;
     border-radius: 5px;
     color: #191818;
     padding-bottom: 10px;
-    box-shadow: 0px 1.5px #00204a;
+    width: 80%;
+}
+.contact-icon:hover {
+    scale: 1.2;
+}
+.form-input-label {
+    padding-left: 10px;
 }
 .input-field {
     width: 95%;
+    height: 25px;
     margin: 0px;
+    padding-left: 20px;
+    border: solid #f4f4ef 0.5px;
+    border-radius: 35px;
 }
 #top-contact-container {
     padding-bottom: 5px;
-}
-#contact-fieldset {
-    width: 80%;
-    margin: auto;
-    border-radius: 5px;
-    box-shadow: 0px 3px #00204a;
 }
 #send-us-email {
     background-color: #00204a;
@@ -330,6 +337,7 @@ a {
     width: 24%;
     margin: auto 38% auto 38%;
     height: 30px;
+    border-radius: 5px;
 }
 #send-us-email:hover {
     scale: 1.2;
@@ -393,7 +401,7 @@ a {
         width: 97%;
         margin: auto;
         max-width: none;
-        font-size: 13px;
+        font-size: 14px;
         line-height: 22px;
     }
 
@@ -484,8 +492,17 @@ a {
         left: 98%;
         top: -1.5%;
     }
+    /* about section */
+    #visionMission-container {
+        display: flex;
+        flex-direction: column;
+    }
 
     /* services sections */
+    #services {
+        display: flex;
+        flex-direction: column;
+    }
 
     /* experience section */
     #experience-container {
