@@ -10,7 +10,7 @@
 body{
     width: 98%;
     padding: 0%;
-    background-color: #00204a;
+    background-color: #ffffff;
     font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 25px;
     font-size: 15px;
@@ -71,15 +71,16 @@ a {
     height: 50%;
 }
 .nav-list-item a {
-    color: #041522;
+    color: #2a5c82;
 }
 .nav-list-item a:hover {
     color: #ffffff;
     text-decoration: underline;
 }
 .nav-list-item:hover {
-    background-color: #2a5c82;
+    background-color: #e9d25a;
     border-radius: 5px;
+    color: #000000;
 }
 
 /* home nav drop-down list */
@@ -123,21 +124,26 @@ a {
 }
 /* welcome message section */
 #welcomeMsg-top-container {
-    width: 90%;
+    width: 92%;
     margin: auto;
     position: relative;
     margin-top: 2.5%;
     background-color: #ffffff;
     border-radius: 5px;
+    text-align: center;
+}
+#welcome-img {
+    width: 100%;
+    mix-blend-mode: hard-light;
 }
 #short-welcome-note {
-    padding: 2%;
-    width: 90%;
+    width: 100%;
     margin: auto;
     text-align: left;
     height: auto;
     margin-top: 2%;
     text-align: center;
+    border-radius: 5px;
 }
 #welcomeMsg-container {
     width: 94%;
@@ -155,11 +161,12 @@ a {
     margin: 0px;
     padding: 0px;
     position: absolute;
-    left: 99%;
+    left: 50%;
     top: -2.5%;
-    border: solid #131516 0.5px;
+    border: solid #ffffff 0.5px;
     scale: 1.2;
     mix-blend-mode: darken;
+    background-color: #ffffff;
 }
 
 #close-menu,#msg-close-menu:hover {
@@ -173,6 +180,8 @@ a {
     background-color: #2a5c82;
     height: 25px;
     color: #ffffff;
+    position: relative;
+    top: -55px;
 }
 #view-welcome-msg:hover {
     scale: 1.1;
@@ -190,7 +199,7 @@ a {
 .primary-header{
     text-align: center;
     padding: 2% 0% 2% 0%;
-    color: #000000;
+    color: #2a5c82;
 }
 
 /* about, vision and mission section */
@@ -203,7 +212,7 @@ a {
 }
 #aboutVisionMission-top-container {
     padding-bottom: 6px;
-    margin-top: 16px;
+    margin-top: -25px;
 }
 #about-container {
     width: 97%;
@@ -251,6 +260,7 @@ a {
 #experience-note, #team-note, #team-note, .team-item, #contact-note {
     text-align: center;
 }
+
 #service-title, #experience-title {
     margin: 0px;
 }
@@ -269,6 +279,9 @@ a {
     width: 97%;
     margin: auto;
     border-radius: 5px;
+}
+.team-item {
+    padding: 0px 10px 0px 10px;
 }
 
 .experience-and-team-container {
@@ -485,17 +498,20 @@ address {
     /* welcome message section */
     #short-welcome-note {
         padding-top: 33px;
-        height: 60px;
+        height: fit-content;
         border-radius: 5px;
     }
-    #msg-close-menu {
-        left: 98%;
-        top: -1.5%;
+    #view-welcome-msg {
+        top: -43px;
     }
+    
     /* about section */
     #visionMission-container {
         display: flex;
         flex-direction: column;
+    }
+    #aboutVisionMission-top-container {
+        margin-top: -14px;
     }
 
     /* services sections */
