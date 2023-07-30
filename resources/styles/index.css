@@ -13,8 +13,7 @@ body{
     background-color: #ffffff;
     font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 25px;
-    font-size: 15px;
-    text-align: justify;
+    font-size: 17px;
 }
 
 #malinenergy-main {
@@ -175,7 +174,7 @@ a {
 #view-welcome-msg {
     cursor: pointer;
     border-radius: 5px;
-    border: solid 0.5px;
+    border: none;
     box-shadow: 0px 1.5px #00204a;
     background-color: #2a5c82;
     height: 25px;
@@ -350,6 +349,7 @@ address {
     width: 24%;
     margin: auto 38% auto 38%;
     height: 30px;
+    border: none;
     border-radius: 5px;
 }
 #send-us-email:hover {
@@ -414,7 +414,7 @@ address {
         width: 97%;
         margin: auto;
         max-width: none;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 22px;
     }
 
