@@ -321,7 +321,7 @@ a {
 }
 
 /* contact section */
-address {
+#contact-info {
     width: 60%;
     margin: auto;
     text-align: center;
