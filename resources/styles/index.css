@@ -59,7 +59,7 @@ a {
     display: flex;
     flex-direction: row;
     position: relative;
-    left: -45%;
+    left: -41%;
     top: -8px;
     list-style-type: none;
     border-radius: 5px;
@@ -95,8 +95,8 @@ a {
 /* search box container */
 #search-box-container {
     position: absolute;
-    top: 15px;
-    right: 9%;
+    top: 17px;
+    right: 6.5%;
     width: auto;
 }
 #search-box {
@@ -140,9 +140,28 @@ a {
     margin: auto;
     text-align: left;
     height: auto;
-    margin-top: 2%;
+    margin-top: 3%;
     text-align: center;
     border-radius: 5px;
+    position: relative;
+    animation: shortWelcomeNote 2s linear;
+}
+@keyframes shortWelcomeNote{
+    0%{
+        top: -20px;
+    }
+    35%{
+        top: 10px;
+    }
+    50%{
+        top: 20px;
+    }
+    70%{
+        top: 30px;
+    }
+    100%{
+        top: 0px;
+    }
 }
 #welcomeMsg-container {
     width: 94%;
@@ -327,6 +346,9 @@ address {
 }
 .contact-icon:hover {
     scale: 1.2;
+}
+.contact-icon {
+    mix-blend-mode: darken;
 }
 .form-input-label {
     padding-left: 10px;
