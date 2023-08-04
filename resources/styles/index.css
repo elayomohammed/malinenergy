@@ -123,7 +123,7 @@ a {
 }
 /* welcome message section */
 #welcomeMsg-top-container {
-    width: 92%;
+    width: 100%;
     margin: auto;
     position: relative;
     margin-top: 2.5%;
@@ -222,7 +222,6 @@ a {
 
 /* about, vision and mission section */
 .top-level-container {
-    width: 90%;
     margin: auto;
     background-color: #ffffff;
     border-radius: 5px;
@@ -238,6 +237,9 @@ a {
     border-radius: 5px;
     background-color: #f4f4ef;
     padding-top: 1%;
+    opacity: 1;
+    background-image: url('../dependancies/refinery-rig.png');
+    background-blend-mode: overlay;
 }
 #about-note {
     padding: 0% 2% 2% 2%;
@@ -249,7 +251,7 @@ a {
     border-radius: 5px;
 }
 #visionMission-container {
-    width: 100%;
+    width: 97%;
     margin: auto;
     display: grid;
     grid-template-columns: auto auto;
@@ -265,6 +267,8 @@ a {
     width: 97%;
     margin: auto;
     border-radius: 5px;
+    background-image: url('../dependancies/procurement1.png');
+    background-blend-mode: overlay;
 }
 #services {
     display: grid;
@@ -324,6 +328,7 @@ a {
 #contact-info {
     width: 60%;
     margin: auto;
+    padding-top: 0px;
     text-align: center;
     justify-content: space-around;
     display: flex;
@@ -466,7 +471,7 @@ a {
         flex-direction: column;
         position: absolute;
         top: 50px;
-        left: 46.3%;
+        left: 49.28%;
         height: 285px;
         width: 45%;
         padding-left: 5px;
