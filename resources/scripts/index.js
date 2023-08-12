@@ -84,3 +84,12 @@ document.getElementById('msg-close-menu').addEventListener('click', () =>{
     document.getElementById('top-contact-container').style.filter = 'none';
     document.getElementById('footer-section').style.filter = 'none';
 });
+
+// handle sending email
+document.getElementById('send-us-email').addEventListener('click', (event) =>{
+    event.preventDefault();
+    document.getElementById('email-success').style.display = 'block';
+    setTimeout(()=>{
+        document.getElementById('email-success').style.display = 'none';
+    }, 5000);
+})

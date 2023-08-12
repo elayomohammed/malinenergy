@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
+        <title>Malin Energy, Your Preferred Service Provider in the Energy Industry</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Malin Energy, an experience service provider in the energy industry" />
@@ -135,6 +136,7 @@
                                     operations adhere to the highest safety, reliability, and innovation 
                                     standards.
                                 </p>
+                                <img class="service-img" alt="engineering-services" src="./resources/dependancies/engineering-services.jpg" />
                             </div>
                             <div id="infrastructure-container" class="service-item">
                                 <h4 id="infrastructure-title" class="primary-header">infrastructure Services</h4>
@@ -143,6 +145,7 @@
                                     including paving, sitework, and development of industrial, commercial, and 
                                     residential projects.
                                 </p>
+                                <img class="service-img" alt="construction-services" src="./resources/dependancies/construction-services.jpg" />
                             </div>
                             <div id="ict-container" class="service-item">
                                 <h4 id="ict-title" class="primary-header">ICT Services</h4>
@@ -152,6 +155,7 @@
                                     We specialize in video surveillance, access control, warehouse management systems, 
                                     and computerized maintenance management systems.
                                 </p>
+                                <img class="service-img" alt="ict-services" src="./resources/dependancies/ict-services.jpg" />
                             </div>
                             <div id="procurement-container" class="service-item">
                                 <h4 id="procurement-title" class="primary-header">Procurement Services</h4>
@@ -160,6 +164,7 @@
                                     providers, ensuring the highest international quality standards and 
                                     reducing lead times through OEM relationships.
                                 </p>
+                                <img class="service-img" alt="procurement-services" src="./resources/dependancies/procurement-services.jpg" />
                             </div>
                         </div>
                     </div>
@@ -276,12 +281,12 @@
 
                         <form id="contact-form">
                                 <h2 class="primary-header">Send us an Email</h2>
-                                <label for="first-name" class="form-input-label">First Name:</label><br /><input class="input-field" type="text" id="first-name" placeholder="John" />
-                                <label for="last-name" class="form-input-label">Last Name:<input class="input-field" type="text" id="last-name" placeholder="bush" /></label><br />
-                                <label for="email" class="form-input-label">Email:<input class="input-field" type="email" id="email" placeholder="john@business.com" /></label><br />
-                                <label for="phone" class="form-input-label">Phone:<input class="input-field" type="tel" id="phone" placeholder="+2348000000000" /></label><br />
-                                <label for="subject" class="form-input-label">Subject:<input class="input-field" type="text" id="subject" placeholder="e.g: quote request" /></label><br />
-                                <label for="message" class="form-input-label">Message:<textarea class="input-field" cols="auto" rows="5" id="message" placeholder="write your message..."></textarea></label><br />
+                                <label for="first-name" class="form-input-label">First Name:</label><br /><input class="input-field" type="text" id="first-name" placeholder="John" required />
+                                <label for="last-name" class="form-input-label">Last Name:<input class="input-field" type="text" id="last-name" placeholder="bush" required /></label><br />
+                                <label for="email" class="form-input-label">Email:<input class="input-field" type="email" id="email" placeholder="john@business.com" required /></label><br />
+                                <label for="phone" class="form-input-label">Phone:<input class="input-field" type="tel" id="phone" placeholder="+2348000000000" required /></label><br />
+                                <label for="subject" class="form-input-label">Subject:<input class="input-field" type="text" id="subject" placeholder="e.g: quote request" required /></label><br />
+                                <label for="message" class="form-input-label">Message:<textarea class="input-field" cols="auto" rows="5" id="message" placeholder="write your message..." ></textarea></label><br />
                                 <input type="submit" value="Email Us" id="send-us-email" />
                         </form>
                     </div>
@@ -316,6 +321,7 @@
                 </div>
             </footer>
         </main>
+        <div id="email-success">Email sent successfully...</div>
 
         <script type="text/javascript" src="./resources/scripts/index.js"></script>
     </body>
