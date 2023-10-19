@@ -164,8 +164,9 @@ a {
     }
 }
 #welcomeMsg-container {
-    width: 94%;
-    height: auto;
+    width: 78%;
+    height: 55%;
+    padding: 5% 5% 0% 5%;
     margin: auto;
     border-radius: 5px;
     display: none;
@@ -176,15 +177,16 @@ a {
 }
 #msg-close-menu {
     cursor: pointer;
-    margin: 0px;
-    padding: 0px;
+    height: 25px;
+    width: 25px;
     position: absolute;
-    left: 50%;
-    top: -2.5%;
-    border: solid #ffffff 0.5px;
+    left: 52%;
+    top: 47px;
+    border: solid #000000 0.5px;
     scale: 1.2;
     mix-blend-mode: darken;
     background-color: #ffffff;
+    border-radius: 50px;
 }
 
 #close-menu,#msg-close-menu:hover {
@@ -192,26 +194,32 @@ a {
 }
 #view-welcome-msg {
     cursor: pointer;
+    padding: 10px;
     border-radius: 5px;
     border: none;
-    box-shadow: 0px 1.5px #00204a;
+    box-shadow: 0px 2.5px #00204a;
     background-color: #2a5c82;
-    height: 25px;
+    height: auto;
     color: #ffffff;
     position: relative;
-    top: -55px;
+    top: -470px;
+    font-size: 30px;
 }
 #view-welcome-msg:hover {
     scale: 1.1;
 }
 #welcomeMsg {
-    padding: 2%;
+    padding: 10% 5% 0% 5%;
+    margin: auto;
+    height: 100%;
+    width: 100%;
     color: #6cd4e4;
     background-image: url('../dependancies/telecom-city.jpg');
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 5px;
     background-blend-mode: color-burn;
-    margin-top: 0px;
+    font-size: 24px;
+    text-align: left;
+    font-weight: 500;
 }
 
 .primary-header{
@@ -399,6 +407,8 @@ a {
     top: 5px;
     right: 5px;
     z-index: 1000;
+    border-radius: 5px;
+    box-shadow: 0px 1.5px #000000;
 }
 #send-us-email:hover {
     scale: 1.2;
@@ -549,8 +559,27 @@ a {
         height: fit-content;
         border-radius: 5px;
     }
+
+    #welcomeMsg-container {
+        width: 76%;
+        height: 90%;
+        padding: 2% 5% 0% 5%;
+    }
     #view-welcome-msg {
-        top: -43px;
+        top: -135px;
+        font-size: 16px;
+    }
+
+    #msg-close-menu {
+        left: 52%;
+        top: -20px;
+    }
+    
+    #welcomeMsg {
+        padding: 5% 5% 0% 5%;
+        font-size: 17px;
+        font-weight: 700;
+        text-align: center;
     }
     
     /* about section */

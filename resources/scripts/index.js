@@ -92,4 +92,4 @@ document.getElementById('send-us-email').addEventListener('click', (event) =>{
     setTimeout(()=>{
         document.getElementById('email-success').style.display = 'none';
     }, 5000);
-})
+});

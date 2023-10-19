@@ -69,7 +69,7 @@
                     
                     <div id="welcomeMsg-container">
                         <img id="msg-close-menu" alt="" src="./resources/dependancies/icon-close-menu.svg">
-                        <p id="welcomeMsg" class="primary-paragraph">
+                        <p id="welcomeMsg">
                             On behalf of the Board of Directors, Management, and Staff of Malin 
                             Energy, we extend a warm welcome. Our dedication to transformation 
                             and innovation in the energy and oil & gas sector drives us to provide 
@@ -279,15 +279,15 @@
                         </div>
                         <p id="location-icon-note">No 14, Zaire Crescent Maitama, Abuja</p>
 
-                        <form id="contact-form">
-                                <h2 class="primary-header">Send us an Email</h2>
-                                <label for="first-name" class="form-input-label">First Name:</label><br /><input class="input-field" type="text" id="first-name" placeholder="John" required />
-                                <label for="last-name" class="form-input-label">Last Name:<input class="input-field" type="text" id="last-name" placeholder="bush" required /></label><br />
-                                <label for="email" class="form-input-label">Email:<input class="input-field" type="email" id="email" placeholder="john@business.com" required /></label><br />
-                                <label for="phone" class="form-input-label">Phone:<input class="input-field" type="tel" id="phone" placeholder="+2348000000000" required /></label><br />
-                                <label for="subject" class="form-input-label">Subject:<input class="input-field" type="text" id="subject" placeholder="e.g: quote request" required /></label><br />
-                                <label for="message" class="form-input-label">Message:<textarea class="input-field" cols="auto" rows="5" id="message" placeholder="write your message..." ></textarea></label><br />
-                                <input type="submit" value="Email Us" id="send-us-email" />
+                        <h2 class="primary-header">Send us an Email</h2>
+                        <form id="contact-form" action="submit" method="post" type="submit">
+                            <label for="first-name" class="form-input-label">First Name:</label><br /><input class="input-field" type="text" id="first-name" placeholder="John" required />
+                            <label for="last-name" class="form-input-label">Last Name:</label><br /><input class="input-field" type="text" id="last-name" placeholder="bush" required />
+                            <label for="email" class="form-input-label">Email:</label><br /><input class="input-field" type="email" id="e-mail" placeholder="john@business.com" required />
+                            <label for="phone" class="form-input-label">Phone:</label><br /><input class="input-field" type="tel" id="phone" placeholder="+2348000000000" required />
+                            <label for="subject" class="form-input-label">Subject:</label><br /><input class="input-field" type="text" id="subject" placeholder="e.g: quote request" required />
+                            <label for="message" class="form-input-label">Message:</label><br /><textarea class="input-field" cols="auto" rows="5" id="message" placeholder="write your message..." ></textarea>
+                            <input type="submit" value="Email Us" id="send-us-email" />
                         </form>
                     </div>
                 </div>
